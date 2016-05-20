@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'pf_sebold'; 
+    src: url(../fonts/pfbeausanspro-sebold-webfont.ttf); 
+}
+
+@font-face {
+    font-family: 'pf_thin'; 
+    src: url(../fonts/pfbeausanspro-thin-webfont.ttf); 
+}
+
+@font-face {
+    font-family: 'pf_reg'; 
+    src: url(../fonts/pfbeausanspro-reg-webfont.ttf); 
+}
+
+@font-face {
+    font-family: 'pf_bold'; 
+    src: url(../fonts/PFBeauSansPro-Bold.ttf); 
+}
+
+@font-face {
+    font-family: 'pf_black'; 
+    src: url(../fonts/PFBeauSansPro-Black.ttf); 
+}
+
+/*HEADER*/
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/home1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: rgba(255,255,255, 0.9);
+    box-shadow: none;
+    position: fixed;
+    z-index: 9999;
+    height: 80px !important;
+    line-height: 80px !important;
+}
+
+nav .nav-wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+a.brand-logo img {
+    display: inline-block;
+    margin: 15px;
+}
+
+ul.menu li a {
+    color: #333;
+    font-weight: bold;
+    font-family: 'pf_sebold'; 
+}
+
+ul.menu li a:hover {
+    color: #00ade5;
+}
+
+.header {
+    position: absolute;
+    max-height:200px;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    width:100%;
+    margin: auto 0;
+    text-align: center;
+    color: #00ade5;
+}
+
+.header h1, .header p {
+    font-family: 'pf_bold';  
+}
+
+#header p {
+    line-height: 1.1;
+    font-size: 2.35rem;
+}
+
+#header p {
+    line-height: 1.1;
+    font-size: 2.3rem;
+}
+
+/*TEXT BLOCK*/
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+.textblock {
+    width: 100%;
+    min-height:100vh;
+    height: auto;
+    background-image: url("../images/background.jpg");
+    position: relative;
+    padding:9% 0 9% 0;
+}
+
+.text-content {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    position: inherit;
+    top: 0; left: 0; bottom: 0; right: 0;
+    line-height: 1.8;
+}
+
+#loginform {
+    text-align: center;
+}
+
+.textbox {
+    font-family: 'pf_sebold';
+    font-size: 1rem;
+    color: #d6a607;
+    margin: 0;
+    padding: 0;
+}
+
+#dirty {
+    float: left;
+    width: 40%;
+    margin: 0 20px 0 0;
+}
+
+/*THE COLUMNS*/
+
+#columns3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/46.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#columns3 h3 {
+    color: #00ade5;
+    font-family: 'pf_bold';
+    margin-top: 50px; 
+}
+
+#columns3 p {
+    color: #00ade5;
+    font-family: 'pf_sebold'; 
+    margin-bottom: 15px;
+}
+
+img.mark {
+    display: block;
+    width: 40%;
+    margin:0 auto 20px auto;
+}
+
+.m-top-40 {
+    margin-top: 40px;
+}
+
+#columns3 ul li {
+    font-family: 'pf_reg';
+    margin-bottom: 15px;
+
+}
+
+/*TECHNOLOGIES */
+
+#tech {
+    height: 100vh;
+    width:100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#tech ul li {
+    font-family: 'pf_bold';
+    font-size: 2.5rem;
+}
+
+.tabtab {
+    margin-top: 100px !important;
+}
+
+.tabs {
+    background-color: transparent !important;
+}
+
+#tech a {
+    color: #d6a607;
+    text-transform: none;
+}
+
+.twocolumn {
+    column-count: 2;
+    padding: 20px !important;
+}
+
+.triangle-border {
+    position: relative;
+    padding: 15px;
+    margin: 1em 0 3em;
+    /* border:5px solid #6D6E71; */
+    box-shadow: 0 2px 14px rgba(0,0,0,0.4);
+    color: #333;
+    background: #fff;
+}
+
+.triangle-border:before {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* value = - border-top-width - border-bottom-width */
+    left: 40px; /* controls horizontal position */
+    border-width: 20px 20px 0;
+    border-color: #6D6E71 transparent;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.4);
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+    content: "";
+    position: absolute;
+    bottom:- 13px; /* value = - border-top-width - border-bottom-width */
+    left: 47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+.tabs {
+    background-color: transparent;
+}
+
+.tabs .indicator {
+    background: none !important;
+}
+
+.tabs .tab a { 
+    color: #6D6E71;
+}
+
+.tabs .tab a:hovern{
+    color: rgb(0,166,227);
+}
+
+/* creates the larger triangle */
+.triangle-border.top:before {
+    top:-20px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:10%;
+    /*right:40px; !* controls horizontal position *!*/
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top:after {
+    top:-13px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:calc(10% + 6px);
+    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
+    border-width:0 13px 13px;
+}
+/*tab 2*/
+.triangle-border.top.tab2:before {
+    top:-20px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:30%;
+    /*right:40px; !* controls horizontal position *!*/
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top.tab2:after {
+    top:-13px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:calc(30% + 6px);
+    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
+    border-width:0 13px 13px;
+}
+
+/*tab 3*/
+.triangle-border.top.tab3:before {
+    top:-20px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:50%;
+    /*right:40px; !* controls horizontal position *!*/
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top.tab3:after {
+    top:-13px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:calc(50% + 6px);
+    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
+    border-width:0 13px 13px;
+}
+
+/*tab 4*/
+
+.triangle-border.top.tab4:before {
+    top:-20px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:70%;
+    /*right:40px; !* controls horizontal position *!*/
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top.tab4:after {
+    top:-13px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:calc(70% + 6px);
+    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
+    border-width:0 13px 13px;
+}
+
+/*tab 5*/
+.triangle-border.top.tab5:before {
+    top:-20px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:90%;
+    /*right:40px; !* controls horizontal position *!*/
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top.tab5:after {
+    top:-13px; /* value = - border-top-width - border-bottom-width */
+    bottom:auto;
+    left:calc(90% + 6px);
+    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
+    border-width:0 13px 13px;
+}
+
+
+/*SLIDER */
+
+
+
+
+/*FEEDBACK FORM*/
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent!important;
+    border: 2px solid #747272 !important;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0 !important;
+    outline: none !important;
+    height: 2rem !important;
+    width: 40%!important;
+    font-size: 1rem !important;
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    box-sizing: content-box !important;
+    transition: all 0.3s !important;
+    box-shadow: none !important;
+}
+
+input {
+    background-color: transparent !important;
+    border: 2px solid #747272 !important;
+    outline: none !important;
+    height: 2rem !important;
+    width: 40% !important;
+    font-size: 1rem !important;
+    margin: 0 auto 15px auto !important;
+    padding: 0 !important;
+    box-sizing: content-box !important;
+    box-shadow: none !important;
+
+}
+
+.submitbutton {
+    width: 150px !important;
+    font-weight:bold !important;
+    border-radius: 5px  !important;
+    color: #855512 !important;
+    margin: auto
+
+}
+
+
+button:focus {
+    outline: none;
+    background-color: #DDDDDD;
+}
+
+.contextone{
+    text-align: center;
+    color: #855512;
+    font-size: 1.8rem;
+    font-weight:bold;
+    font-family: Tahoma, sans-serif;
+}
+.contexttwo{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight:bold;
+    font-family: Tahoma, sans-serif;
+}
+.contextthree{
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Footer  */
+
+/* MEDIA */
+@media screen and (max-width:746px) {
+    #floatimg {
+        width: 100%;
+    }
+
+    .jcarousel {
+        height: 50vh;
+    }
+}
+@media screen and (max-width:600px){
+    #columns3{
+        height:100%;
+    }
+}
+
+
+@media screen and (max-width:428px) {
+    #header p {
+        line-height: 1.1;
+        font-size: 1.5rem;
+    }
+
+    .text-content {
+        width: 90%;
+    }
+
+    #floatimg {
+        width: 100%;
+    }
+}
