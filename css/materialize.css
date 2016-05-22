@@ -5466,14 +5466,14 @@ a.waves-effect .waves-ripple {
   -webkit-font-smoothing: antialiased;
 }
 
-select:focus {
+/* select:focus {
   outline: 1px solid #c9f3ef;
 }
 
 button:focus {
   outline: none;
   background-color: #2ab7a9;
-}
+} */
 
 label {
   font-size: 0.8rem;

@@ -112,11 +112,11 @@ ul.menu li a:hover {
     padding:9% 0 9% 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+10,b8bac6+33,b8bac6+47,b8bac6+57,b8bac6+68,dddfe3+85,f5f6f6+100 */
-background: rgb(245,246,246); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 10%, rgba(184,186,198,1) 33%, rgba(184,186,198,1) 47%, rgba(184,186,198,1) 57%, rgba(184,186,198,1) 68%, rgba(221,223,227,1) 85%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+    background: rgb(245,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 10%, rgba(184,186,198,1) 33%, rgba(184,186,198,1) 47%, rgba(184,186,198,1) 57%, rgba(184,186,198,1) 68%, rgba(221,223,227,1) 85%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -386,7 +386,54 @@ img.mark {
 
 /*SLIDER */
 
+.multiple-items img {
+    width: 70%;
+    height: 70%;
+}
 
+.slide-contain {
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../images/ex.jpg');
+}
+
+.multiple-items {
+    width: 85%;
+    margin: 0 auto;
+    /* padding-top: 15%; */
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #00ade5 !important;
+    font-size: 40px !important;
+}    
+
+.slick-prev, .slick-next {
+    padding-top: 8% !important;
+}
+
+.slick-slider {
+    padding-top: 8% !important;
+}
+
+.slick-slide img {
+    display: block;
+    margin-left: 50px;
+}
+
+
+.slick-dots li button:before {
+    font-size: 12px !important;
+    color: #00ade5 !important;
+    margin-top: 30px;
+
+}
+
+.slick-prev {
+    left: -45px !important;
+}
 
 
 /*FEEDBACK FORM*/
@@ -426,15 +473,15 @@ input {
     font-weight:bold !important;
     border-radius: 5px  !important;
     color: #855512 !important;
-    margin: auto
+    margin: auto;
 
 }
 
 
-button:focus {
+/* button:focus {
     outline: none;
     background-color: #DDDDDD;
-}
+} */
 
 .contextone{
     text-align: center;
