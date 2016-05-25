@@ -43,7 +43,7 @@ body {
     min-height: 100vh;
     background-image: url("../images/home1.jpg");
     background-size: cover;
-    background-position: center, center;
+    background-position: center;
 }
 
 nav {
@@ -51,8 +51,26 @@ nav {
     box-shadow: none;
     position: fixed;
     z-index: 9999;
-    height: 80px !important;
+    height: 100px !important;
     line-height: 80px !important;
+    transition: all 0.3s;
+}
+
+nav.scroller {
+    position: fixed;
+    z-index: 9999;
+    height: 70px !important;
+    line-height: 80px !important;
+    height: 70px;
+    background-color: rgba(255,255,255, 0.98);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+
+nav.scroller img {
+    width: 70% !important;
+    height: auto;
+    transition: all 0.3s;
 }
 
 .row {
@@ -65,8 +83,10 @@ nav .nav-wrapper {
 }
 
 a.brand-logo img {
+    width: 100%;
     display: inline-block;
     margin: 15px;
+    transition: all 0.3s;
 }
 
 ul.menu li a {
@@ -227,7 +247,7 @@ img.mark {
     padding: 20px !important;
 }
 
-.twocolumn p{
+.twocolumn p {
     font-family: 'pf_reg';
 }
 
@@ -235,7 +255,6 @@ img.mark {
     position: relative;
     padding: 15px;
     margin: 1em 0 3em;
-    /* border:5px solid #6D6E71; */
     box-shadow: 0 2px 14px rgba(0,0,0,0.4);
     color: #333;
     background: #fff;
@@ -249,7 +268,6 @@ img.mark {
     border-width: 20px 20px 0;
     border-color: #6D6E71 transparent;
     box-shadow: 0 2px 14px rgba(0,0,0,0.4);
-    /* reduce the damage in FF3.0 */
     display: block;
     width: 0;
 }
@@ -278,7 +296,7 @@ img.mark {
     color: #6D6E71;
 }
 
-.tabs .tab a:hover{
+.tabs .tab a:hover {
     color: rgb(0,166,227);
 }
 
@@ -403,6 +421,12 @@ img.mark {
 
 .slick-prev {
     left: -45px !important;
+}
+
+.img-but {
+    position: absolute;
+    
+    
 }
 
 /*FEEDBACK FORM*/
