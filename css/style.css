@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'pf_reg', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+}
+
 /* Fonts */
 @font-face {
     font-family: 'pf_sebold'; 
@@ -31,13 +38,12 @@
 }
 
 /*HEADER*/
-
-#header {
+.container-fluid {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../images/home1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center, center;
 }
 
 nav {
@@ -47,6 +53,10 @@ nav {
     z-index: 9999;
     height: 80px !important;
     line-height: 80px !important;
+}
+
+.row {
+    margin-bottom: 0 !important;
 }
 
 nav .nav-wrapper {
@@ -63,6 +73,10 @@ ul.menu li a {
     color: #333;
     font-weight: bold;
     font-family: 'pf_sebold'; 
+}
+
+#top-menu li.active a {
+  color: #00ade5;
 }
 
 ul.menu li a:hover {
@@ -86,18 +100,13 @@ ul.menu li a:hover {
     font-family: 'pf_bold';  
 }
 
-#header p {
+.header p {
     line-height: 1.1;
     font-size: 2.35rem;
 }
 
-#header p {
-    line-height: 1.1;
-    font-size: 2.3rem;
-}
 
 /*TEXT BLOCK*/
-
 .clearfix {
     content: "";
     clear: both;
@@ -107,17 +116,13 @@ ul.menu li a:hover {
     width: 100%;
     min-height:100vh;
     height: auto;
-    /* background-image: url("../images/background.jpg"); */
     position: relative;
     padding:9% 0 9% 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+10,b8bac6+33,b8bac6+47,b8bac6+57,b8bac6+68,dddfe3+85,f5f6f6+100 */
     background: rgb(245,246,246); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 10%, rgba(184,186,198,1) 33%, rgba(184,186,198,1) 47%, rgba(184,186,198,1) 57%, rgba(184,186,198,1) 68%, rgba(221,223,227,1) 85%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
-
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); 
 }
 
 .text-content {
@@ -148,7 +153,6 @@ ul.menu li a:hover {
 }
 
 /*THE COLUMNS*/
-
 #columns3 {
     height: 100vh;
     width: 100%;
@@ -188,20 +192,16 @@ img.mark {
 }
 
 /*TECHNOLOGIES */
-
 #tech {
-    height: 100vh;
+    min-height: 100vh;
     width:100%;
-    /* background-image: url("../images/background.jpg"); */
     background-size: cover;
     background-position: center center;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+10,b8bac6+33,b8bac6+47,b8bac6+57,b8bac6+68,dddfe3+85,f5f6f6+100 */
     background: rgb(245,246,246); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 10%, rgba(184,186,198,1) 33%, rgba(184,186,198,1) 47%, rgba(184,186,198,1) 57%, rgba(184,186,198,1) 68%, rgba(221,223,227,1) 85%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 10%,rgba(184,186,198,1) 33%,rgba(184,186,198,1) 47%,rgba(184,186,198,1) 57%,rgba(184,186,198,1) 68%,rgba(221,223,227,1) 85%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
-
 }
 
 #tech ul li {
@@ -228,7 +228,7 @@ img.mark {
 }
 
 .twocolumn p{
-    font-family: 'pf_reg'
+    font-family: 'pf_reg';
 }
 
 .triangle-border {
@@ -244,8 +244,8 @@ img.mark {
 .triangle-border:before {
     content: "";
     position: absolute;
-    bottom: -20px; /* value = - border-top-width - border-bottom-width */
-    left: 40px; /* controls horizontal position */
+    bottom: -20px;
+    left: 40px;
     border-width: 20px 20px 0;
     border-color: #6D6E71 transparent;
     box-shadow: 0 2px 14px rgba(0,0,0,0.4);
@@ -254,25 +254,14 @@ img.mark {
     width: 0;
 }
 
-/* #test1, #test2, #test3, #test4,  {
-    width: 60%;
-}
-
-#test5 {
-    width: 60%;
-    margin-left: 450px;
-} */
-
-/* creates the smaller  triangle */
 .triangle-border:after {
     content: "";
     position: absolute;
-    bottom:- 13px; /* value = - border-top-width - border-bottom-width */
-    left: 47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+    bottom:- 13px; 
+    left: 47px; 
     border-width: 13px 13px 0;
     border-style: solid;
     border-color: #fff transparent;
-    /* reduce the damage in FF3.0 */
     display: block;
     width: 0;
 }
@@ -289,107 +278,85 @@ img.mark {
     color: #6D6E71;
 }
 
-.tabs .tab a:hovern{
+.tabs .tab a:hover{
     color: rgb(0,166,227);
 }
 
-/* creates the larger triangle */
 .triangle-border.top:before {
-    top:-20px; /* value = - border-top-width - border-bottom-width */
+    top:-20px;
     bottom:auto;
     left:10%;
-    /*right:40px; !* controls horizontal position *!*/
     border-width:0 20px 20px;
 }
 
-/* creates the smaller  triangle */
 .triangle-border.top:after {
-    top:-13px; /* value = - border-top-width - border-bottom-width */
+    top:-13px; 
     bottom:auto;
     left:calc(10% + 6px);
-    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
     border-width:0 13px 13px;
 }
-/*tab 2*/
+
 .triangle-border.top.tab2:before {
-    top:-20px; /* value = - border-top-width - border-bottom-width */
+    top:-20px; 
     bottom:auto;
     left:30%;
-    /*right:40px; !* controls horizontal position *!*/
     border-width:0 20px 20px;
 }
 
-/* creates the smaller  triangle */
 .triangle-border.top.tab2:after {
-    top:-13px; /* value = - border-top-width - border-bottom-width */
+    top:-13px; 
     bottom:auto;
     left:calc(30% + 6px);
-    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
     border-width:0 13px 13px;
 }
 
-/*tab 3*/
 .triangle-border.top.tab3:before {
-    top:-20px; /* value = - border-top-width - border-bottom-width */
+    top:-20px; 
     bottom:auto;
     left:50%;
-    /*right:40px; !* controls horizontal position *!*/
     border-width:0 20px 20px;
 }
 
-/* creates the smaller  triangle */
 .triangle-border.top.tab3:after {
-    top:-13px; /* value = - border-top-width - border-bottom-width */
+    top:-13px; 
     bottom:auto;
     left:calc(50% + 6px);
-    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
     border-width:0 13px 13px;
 }
-
-/*tab 4*/
 
 .triangle-border.top.tab4:before {
-    top:-20px; /* value = - border-top-width - border-bottom-width */
+    top:-20px; 
     bottom:auto;
     left:70%;
-    /*right:40px; !* controls horizontal position *!*/
     border-width:0 20px 20px;
 }
 
-/* creates the smaller  triangle */
 .triangle-border.top.tab4:after {
-    top:-13px; /* value = - border-top-width - border-bottom-width */
+    top:-13px; 
     bottom:auto;
     left:calc(70% + 6px);
-    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
     border-width:0 13px 13px;
 }
 
-/*tab 5*/
 .triangle-border.top.tab5:before {
-    top:-20px; /* value = - border-top-width - border-bottom-width */
+    top:-20px;
     bottom:auto;
     left:90%;
-    /*right:40px; !* controls horizontal position *!*/
     border-width:0 20px 20px;
 }
 
-/* creates the smaller  triangle */
 .triangle-border.top.tab5:after {
-    top:-13px; /* value = - border-top-width - border-bottom-width */
+    top:-13px; 
     bottom:auto;
     left:calc(90% + 6px);
-    /*right:47px; !* value = (:before right) + (:before border-right) - (:after border-right) *!*/
     border-width:0 13px 13px;
 }
-
-
-/*SLIDER */
 
 .multiple-items img {
     width: 70%;
     height: 70%;
 }
+
 
 .slide-contain {
     height: 100vh;
@@ -402,7 +369,11 @@ img.mark {
 .multiple-items {
     width: 85%;
     margin: 0 auto;
-    /* padding-top: 15%; */
+}
+
+.slide-div {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -421,110 +392,282 @@ img.mark {
 .slick-slide img {
     display: block;
     margin-left: 50px;
+    text-align: center;
 }
-
 
 .slick-dots li button:before {
     font-size: 12px !important;
     color: #00ade5 !important;
     margin-top: 30px;
-
 }
 
 .slick-prev {
     left: -45px !important;
 }
 
-
 /*FEEDBACK FORM*/
-input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
-    background-color: transparent!important;
-    border: 2px solid #747272 !important;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0 !important;
-    outline: none !important;
-    height: 2rem !important;
-    width: 40%!important;
-    font-size: 1rem !important;
-    margin: 0 0 15px 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    box-sizing: content-box !important;
-    transition: all 0.3s !important;
-    box-shadow: none !important;
+.feedbackform {
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
 }
 
-input {
-    background-color: transparent !important;
-    border: 2px solid #747272 !important;
-    outline: none !important;
-    height: 2rem !important;
-    width: 40% !important;
-    font-size: 1rem !important;
-    margin: 0 auto 15px auto !important;
-    padding: 0 !important;
+ form input[type=text], form input[type=email], form input[type=text] textarea.materialize-textarea {
+    width: 20%!important;
+    height: 20px !important; 
+    display: block !important;
+    appearance: none !important;
+    margin: 0 auto !important;
+    border: 1px solid #ccc !important;
+    box-shadow: inset 0px 2px 4px 0 rgba(0,0,0,0.1) !important;
+    height: 35px !important;
+    padding: 0 10px 0 10px;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    color: #333 !important;
+    transition: box-shadow 0.3s !important;
     box-sizing: content-box !important;
-    box-shadow: none !important;
+}
 
+form {
+    padding: 2px !important;
 }
 
 .submitbutton {
-    width: 150px !important;
-    font-weight:bold !important;
-    border-radius: 5px  !important;
-    color: #855512 !important;
-    margin: auto;
-
+    display: inline-block;
+    width: 20%;
+    font-family: 'pf_thin';
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 20px 18px 20px;
+    background: #00ade5;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #00ade5;
+    text-transform: uppercase;
+    margin: 15px auto 15px !important;
 }
 
+.submitbutton:hover {
+    background: #fff;
+    color: #00ade5;
+    border: 2px solid #00ade5;
+    cursor: pointer;
+}
 
-/* button:focus {
-    outline: none;
-    background-color: #DDDDDD;
-} */
+.absolute-center {
+    overflow: hidden;
+}
+
 
 .contextone{
+    margin-top: 10%;
     text-align: center;
-    color: #855512;
+    color: #d6a607;
     font-size: 1.8rem;
     font-weight:bold;
-    font-family: Tahoma, sans-serif;
+    font-family: 'pf_reg', sans-serif;
+    margin-bottom: 10px;
 }
+
 .contexttwo{
     text-align: center;
     font-size: 1.8rem;
     font-weight:bold;
-    font-family: Tahoma, sans-serif;
+    font-family: 'pf_reg', sans-serif;
+    margin-bottom: 40px;
 }
 .contextthree{
+    margin-top: 15px;
     text-align: center;
     font-weight: bold;
-    font-family: Tahoma, sans-serif;
+    font-family: 'pf_reg', sans-serif;
 }
 
-/* Footer  */
+.footer {
+    width: 100%;
+    min-height: 10%;
+    background-color: #eefaff;
+    position: absolute;
+}
+
+.text-foo {    
+    padding: 20px 0 0 15px;
+    display: inline-block;
+}
+
+.foo-text {
+    float: left;
+    display: block;
+    width: 50%;
+    margin:  0 auto;
+}
+
+.socials {
+    width: 50%;
+    display: inline-block;
+    float: right;
+    padding: 20px 30px 0 0;
+}
+
+.fb {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+
+.vk {
+    display: inline-block;
+    margin-left: 10px;
+    float:right;
+}
 
 /* MEDIA */
-@media screen and (max-width:746px) {
-    #floatimg {
-        width: 100%;
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: 95% !important;
     }
 
-    .jcarousel {
-        height: 50vh;
+    .indicator {
+        display: none;
     }
+
+    .text-content {
+        margin-top: 10%;
+    }
+
+    .slick-prev, .slick-next {
+        padding-top: 15% !important;
+    }
+
+    .slick-slider {
+        padding-top: 15% !important;
+    }
+
+@media screen and (max-width:768px) {  
+ 
+    #tech ul li {
+        font-size: 1.6rem !important;
+    } 
+
+    nav .button-collapse i {
+    margin: 10px;
+    }
+
+@media screen and (max-width:767px) {
+
+    .slick-prev:before, .slick-next:before {
+        color: #00ade5 !important;
+        font-size: 20px !important;
+    }    
+
+    .slick-slide img {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .multiple-items img {
+        width: 85%;
+        height: 100%;
+    }
+
+    .submitbutton {
+        width: 35%;
+    }
+
+    .text-content {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .slick-slider {
+    padding-top: 25% !important;
+    }
+
+    form input[type=text], form input[type=email], form input[type=text] textarea.materialize-textarea {
+        width: 35% !important;
+    }
+
+    .contextone {
+        margin-top: 20%;
+    }
+
 }
-@media screen and (max-width:600px){
+
+@media screen and (max-width:600px) {
+   
+    .header {
+    width: 95%;
+    margin: 20% auto;
+    }
+
+    .foo-text {
+        width: 70%;
+    }
+
+    .text-tab {
+        font-size: 12px;
+    }
+
+    .socials {
+        width: 30%;
+    }
+
+    #tech ul li {
+        font-size: 1.1rem !important;
+    }
+
     #columns3{
-        height:100%;
+        height:100%; 
+    }
+
+    h3 {
+    font-size: 2.0rem !important;
     }
 }
 
+@media screen and (max-width:480px) {
+   
+    .text-content {
+        width: 90%;
+    }
+
+    .slick-next {
+        display: none !important;
+    }
+
+    .slick-prev {
+        display: none !important;
+    }  
+
+    .slick-slider {
+        padding-top: 30% !important;
+    }
+
+    .slick-slide img {
+        display: block;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .multiple-items img {
+        width: 90%;
+        height: 90%;
+    }
+
+
+}
 
 @media screen and (max-width:428px) {
+
     #header p {
         line-height: 1.1;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .text-content {
@@ -534,4 +677,69 @@ input {
     #floatimg {
         width: 100%;
     }
+
+    .submitbutton {
+        width: 45%;
+    }
+
+    form input[type=text], form input[type=email], form input[type=text] textarea.materialize-textarea {
+        width: 45% !important;
+    }
+
+    .foo-text {
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .socials {
+        width: 30%;
+    }
+
+    .text-content {
+        margin-top: 18%;
+    }
+
+    .contextone{
+        margin-top: 25%;
+    }
+
+
+}
+
+@media screen and (max-width:365px) {
+
+    .slick-slider {
+        padding-top: 40% !important;
+        text-align: center;
+    }
+
+    .slick-slide img {
+        display: block;
+        margin-left: 5px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .multiple-items img {
+        width: 90%;
+        height: 100%;
+    }
+
+    #tech ul li {
+        font-size: 0.8rem !important;
+    }
+
+    .contextthree {
+        width: 90%;
+    }
+
+    a.brand-logo img {
+    position: relative;
+    left: 35px !important;
+    }
+
+    .submitbutton {
+        width: 55%;
+    }
+    
 }
