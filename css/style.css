@@ -153,7 +153,7 @@ ul.menu li a:hover {
 }
 
 /*THE COLUMNS*/
-#columns3 {
+#anchor2 {
     height: 100vh;
     width: 100%;
     background-image: url("../images/46.jpeg");
@@ -163,13 +163,13 @@ ul.menu li a:hover {
     text-align: center;
 }
 
-#columns3 h3 {
+#anchor2 h3 {
     color: #00ade5;
     font-family: 'pf_bold';
     margin-top: 50px; 
 }
 
-#columns3 p {
+#anchor2 p {
     color: #00ade5;
     font-family: 'pf_sebold'; 
     margin-bottom: 15px;
@@ -185,14 +185,14 @@ img.mark {
     margin-top: 40px;
 }
 
-#columns3 ul li {
+#anchor2 ul li {
     font-family: 'pf_reg';
     margin-bottom: 15px;
 
 }
 
 /*TECHNOLOGIES */
-#tech {
+#anchor3 {
     min-height: 100vh;
     width:100%;
     background-size: cover;
@@ -204,7 +204,7 @@ img.mark {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
 }
 
-#tech ul li {
+#anchor3 ul li {
     font-family: 'pf_bold';
     font-size: 2.5rem;
 }
@@ -217,7 +217,7 @@ img.mark {
     background-color: transparent !important;
 }
 
-#tech a {
+#anchor3 a {
     color: #d6a607;
     text-transform: none;
 }
@@ -406,7 +406,7 @@ img.mark {
 }
 
 /*FEEDBACK FORM*/
-.feedbackform {
+.feedbackform  {
     height: 100vh;
     width:100%;
     background-size: cover;
@@ -550,7 +550,7 @@ form {
 
 @media screen and (max-width:768px) {  
  
-    #tech ul li {
+    #anchor3 ul li {
         font-size: 1.6rem !important;
     } 
 
@@ -618,11 +618,11 @@ form {
         width: 30%;
     }
 
-    #tech ul li {
+    #anchor3 ul li {
         font-size: 1.1rem !important;
     }
 
-    #columns3{
+    #anchor2{
         height:100%; 
     }
 
@@ -725,7 +725,7 @@ form {
         height: 100%;
     }
 
-    #tech ul li {
+    #anchor3 ul li {
         font-size: 0.8rem !important;
     }
 
