@@ -52,8 +52,12 @@ nav {
     position: fixed;
     z-index: 9999;
     height: 100px !important;
-    line-height: 80px !important;
+    line-height: 90px !important;
     transition: all 0.3s;
+}
+
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 nav.scroller {
@@ -123,6 +127,19 @@ ul.menu li a:hover {
 .header p {
     line-height: 1.1;
     font-size: 2.35rem;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.visible{
+    opacity:1;
+}
+
+.menu li:active {
+    background: transparent;
+    color: #00ade5;
 }
 
 
@@ -375,7 +392,7 @@ img.mark {
     height: 70%;
 }
 
-
+/* Slider */
 .slide-contain {
     height: 100vh;
     width:100%;
@@ -425,8 +442,11 @@ img.mark {
 
 .img-but {
     position: absolute;
-    
-    
+    z-index: 9000;    
+}
+
+.hz {
+    position: relative;
 }
 
 /*FEEDBACK FORM*/
@@ -550,6 +570,20 @@ form {
     display: inline-block;
     margin-left: 10px;
     float:right;
+}
+
+.error{
+  color: red;
+}
+
+.error:focus {
+    outline-color: red !important;
+}
+
+.submitbutton:disabled{
+    background: lightgray;
+    color: #fff;
+    cursor: default;
 }
 
 /* MEDIA */

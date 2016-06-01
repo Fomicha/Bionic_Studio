@@ -49,7 +49,11 @@ $(function(){
         });
     }
     
-    $('body').on('mousewheel', function(e){
+    $('body').on('mousewheel', function(e) {
+
+        if($('body').scrollTop() + 50 > $('#anchor5').offset().top) {
+            return;
+        }
         e.preventDefault();
         e.stopPropagation();
         if( isAnimating ) {
@@ -85,3 +89,23 @@ $(window).scroll(function() {
         $('nav').removeClass("scroller");
     }
 });
+
+// fade
+jQuery(document).ready(function() {
+    jQuery('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 200
+    });
+});
+
+// Плавный переход якорей
+$(document).ready(function(){
+    $("#header").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+
