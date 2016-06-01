@@ -18,6 +18,24 @@ $(document).ready(function(){
                 maxlength: 13,
             },
        },
+        showErrors: function(errorMap, errorList) {
+            this.defaultShowErrors(errorMap, errorList);
+            if(errorList.length) {
+                $('#send').prop( "disabled", true );
+            } else {
+                var errorCheck = 0;
+
+                $('.error.active').each(function(index) {
+                    if($(this).css('display') != 'none') {
+                        errorCheck++;
+                    }                    
+                });
+
+                if(!errorCheck) {
+                    $('#send').prop( "disabled", false );
+                }
+            }
+        },
        messages:{
             login:{
                 required: "Это поле обязательно для заполнения",

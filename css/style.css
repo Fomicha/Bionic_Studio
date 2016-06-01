@@ -154,7 +154,7 @@ ul.menu li a:hover {
     min-height:100vh;
     height: auto;
     position: relative;
-    padding:9% 0 9% 0;
+    padding:9% 0 1% 0;
     background: #fff;
 }
 
@@ -165,10 +165,20 @@ ul.menu li a:hover {
     position: inherit;
     top: 0; left: 0; bottom: 0; right: 0;
     line-height: 1.8;
+
 }
 
 #loginform {
     text-align: center;
+}
+
+.textbox1 {
+    font-family: 'pf_reg';
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
 }
 
 .textbox {
@@ -177,12 +187,19 @@ ul.menu li a:hover {
     color: #333;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
 }
 
 #dirty {
     float: left;
-    width: 40%;
-    margin: 0 20px 0 0;
+    width: 50%;
+    margin: 10px;
+}
+
+#dirty1 {
+    float: right;
+    width: 50%;
+    margin: 10px;
 }
 
 /*THE COLUMNS*/
@@ -250,6 +267,10 @@ img.mark {
 #anchor3 a {
     color: #0086b5;
     text-transform: none;
+}
+
+#anchor3 a.active{
+    color: #333;
 }
 
 .twocolumn {
