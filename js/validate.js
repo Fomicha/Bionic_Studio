@@ -4,7 +4,7 @@ $(document).ready(function(){
        rules:{
             login:{
                 required: true,
-                minlength: 4,
+                minlength: 2,
                 maxlength: 16,
             },
             email:{
@@ -21,7 +21,7 @@ $(document).ready(function(){
        messages:{
             login:{
                 required: "Это поле обязательно для заполнения",
-                minlength: "Логин должен быть минимум 4 символа",
+                minlength: "Логин должен состоять минимум из 2 символов",
                 maxlength: "Максимальное число символо - 16",
             },
             email:{
@@ -31,8 +31,8 @@ $(document).ready(function(){
             },
             number:{
                 required: "Это поле обязательно для заполнения",
-                minlength: "Номер телефона должен быть минимум 10 символов",
-                maxlength: "Номер телефона должен быть максимум 13 символов",
+                minlength: "Номер телефона должен состоять минимум из 10 символов",
+                maxlength: "Номер телефона должен быть максимум из 13 символов",
             },
        }
     });

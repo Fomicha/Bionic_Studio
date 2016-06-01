@@ -6,7 +6,7 @@ $(document).ready(function(){
       slidesToScroll: 3,
       dots: true,
       speed: 500,
-      // autoplay: true,
+      autoplay: true,
       responsive: [
        {
          breakpoint: 1024,
@@ -48,9 +48,7 @@ $(function(){
             anchors.push( $(element).offset().top );
         });
     }
-    
     $('body').on('mousewheel', function(e) {
-
         if($('body').scrollTop() + 50 > $('#anchor5').offset().top) {
             return;
         }
@@ -60,7 +58,6 @@ $(function(){
             return false;
         }
         isAnimating  = true;
-        // Increase or reset current anchor
         if( e.originalEvent.wheelDelta >= 0 ) {
             currentAnchor--;
         }else{
