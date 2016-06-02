@@ -18,12 +18,19 @@ $(document).ready(function(){
          }
        },
        {
-         breakpoint: 600,
+         breakpoint: 770,
          settings: {
-           slidesToShow: 2,
-           slidesToScroll: 2
+           slidesToShow: 1,
+           slidesToScroll: 1
          }
        },
+       // {
+       //   breakpoint: 600,
+       //   settings: {
+       //     slidesToShow: 2,
+       //     slidesToScroll: 2
+       //   }
+       // },
        {
          breakpoint: 370,
          settings: {

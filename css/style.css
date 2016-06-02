@@ -449,6 +449,7 @@ img.mark {
     display: block;
     margin-left: 50px;
     text-align: center;
+    margin: 0 auto !important;
 }
 
 .slick-dots li button:before {
